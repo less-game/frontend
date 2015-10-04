@@ -12,17 +12,18 @@ $tile-shadow: 0 1px 6px 0 rgba(0, 0, 0, .3);
 // Filed
 $field-size: $tile3-size / 2;
 $field-color: #e8e8e8;
-$field-radius: 16px;
+$field-radius: $board-size * .02;
 $field-border-width: 2.5px;
 
 // Borders
 $border-color: #069fd6;
-$border-width: 25px;
-$border-size: 110%;
+$border-width: $field-size * .2;
+$border-size: $field-size * 1.1;
 $border-z-index: 2;
-$border-margin: (100% - $border-size);
-$border-ztile-add-size: 10%;
-$border-ztile-sub-size: 15%;
+$border-margin: $field-size - $border-size;
+// TODO: find a better solution for type7 tile resizing.
+$border-ztile-add-size: $board-size * .002;
+$border-ztile-sub-size: $field-size * .15;
 
 // Player
 $player-z-index: 10;
