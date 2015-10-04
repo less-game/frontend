@@ -1,16 +1,16 @@
 @import 'variables';
 
 .field {
+  display: flex;
   position: relative;
-  float: left;
   margin-right: $field-margin;
   margin-bottom: $field-margin;
   border-width: 0;
   border-style: solid;
   border-color: $tile-color;
   background: $field-color;
-  width: 50%;
-  height: 50%;
+  width: $field-size;
+  height: $field-size;
   box-sizing: border-box;
 
   &:nth-child(1) {

@@ -10,8 +10,10 @@ main {
 }
 
 .board {
+  display: flex;
   width: $board-size;
   height: $board-size;
+  flex-wrap: wrap;
 
   * {
     user-select: none;

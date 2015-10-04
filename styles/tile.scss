@@ -1,13 +1,15 @@
 @import 'variables';
 
 .tile {
-  float: left;
+  display: flex;
   margin-right: $tile3-margin;
   margin-bottom: $tile3-margin;
   border-radius: $field-radius;
   box-shadow: $tile-shadow, $tile-shadow;
   width: $tile3-size;
   height: $tile3-size;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 
   &.rotate90 {
     transform: rotate(90deg);

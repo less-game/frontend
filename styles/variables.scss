@@ -1,17 +1,17 @@
 // Board
-$board-wrapper-size: 800px;
+$board-wrapper-size: 95vh;
 $board-margin: 0 auto;
-$board-size: 100%;
+$board-size: $board-wrapper-size;
 $board-color: #777;
 
 // Tile
 $tile3-size: $board-size / 3.15;
-$tile3-margin: 5px;
+$tile3-margin: (($board-size - $tile3-size * 3) / 3);
 $tile-color: #bdc0c2;
 $tile-shadow: 0 1px 6px 0 rgba(0, 0, 0, .3);
 
 // Filed
-$field-size: 100% / 2.05;
+$field-size: $tile3-size / 2;
 $field-margin: 0;
 $field-color: #e8e8e8;
 $field-radius: 16px;
@@ -23,7 +23,7 @@ $border-width: 25px;
 $border-size: 110%;
 $border-z-index: 2;
 $border-margin: (100% - $border-size);
-$border-ztile-add-size: 3.5%;
+$border-ztile-add-size: 10%;
 $border-ztile-sub-size: 15%;
 
 // Player
